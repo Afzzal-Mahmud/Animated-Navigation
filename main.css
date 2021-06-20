@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary:rgb(62, 6, 4);
+}
 body{
     background-color: rgb(27, 28, 29);
     color: rgb(246, 255, 248);
@@ -30,7 +33,7 @@ nav{
 .logo{
     font-size: 18px;
     letter-spacing: 3px;
-    color: rgb(87, 18, 15);
+    color: var(--primary);
 }
 .nav__links{
     display: flex;
@@ -52,7 +55,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: rgb(87, 18, 15);
+    color: var(--primary);
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 3px;
@@ -64,14 +67,15 @@ a{
     height: 3px;
     width: 23px;
     margin: 4px;
-    background-color: rgb(87, 18, 15);
+    background-color: var(--primary);
+    transition: transform 0.2s ease;
 }
 .fluid__container{
     background: url(./images/pairet.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 92vh;
 }
 /* for body burger */
 .burger{
@@ -122,4 +126,14 @@ a{
 }
 
 /* animated hamburger manu */
-
+.toggle .line1 {
+     transform: rotate(-45deg) translate(-3.5px,7px);
+     /* transform-origin: center;    */
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-3px,-6px);
+    /* transform-origin: center; */
+}
