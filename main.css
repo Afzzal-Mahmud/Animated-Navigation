@@ -7,8 +7,8 @@ body{
     background-color: rgb(27, 28, 29);
     color: rgb(246, 255, 248);
 }
-.fluid__container{
-    background-color: rgb(21, 105, 126);
+.fluid__nav{
+    background-color: rgb(238, 124, 25);
 }
 .container{
     width: 80%;
@@ -30,6 +30,7 @@ nav{
 .logo{
     font-size: 18px;
     letter-spacing: 3px;
+    color: rgb(87, 18, 15);
 }
 .nav__links{
     display: flex;
@@ -51,7 +52,7 @@ li{
 }
 a{
     text-decoration: none;
-    color: rgb(246, 255, 248);
+    color: rgb(87, 18, 15);
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 3px;
@@ -61,20 +62,35 @@ a{
     height: 3px;
     width: 23px;
     margin: 4px;
-    background-color: rgb(246, 255, 248);
+    background-color: rgb(87, 18, 15);
     cursor: pointer;
+}
+.fluid__container{
+    background: url(./images/pairet.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+}
+/* for body burger */
+.burger{
+    display: none;
 }
 
 
 @media screen and (max-width:768px) {
+    .burger{
+        display: block;
+    }
    .nav__links{
        position: fixed;
        width: 40%;
        height: 92vh;
        top: 8vh;
        right: 0;
-       background-color: rgb(21, 105, 126);
+       background-color: rgb(238, 124, 25);
        flex-direction: column;
+       transform: translateX(100%);
        /* display: none; */
    } 
    .nav__links li{
