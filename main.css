@@ -57,13 +57,14 @@ a{
     font-size: 14px;
     letter-spacing: 3px;
 }
-
+.burger{
+    cursor: pointer;
+}
 .burger div{
     height: 3px;
     width: 23px;
     margin: 4px;
     background-color: rgb(87, 18, 15);
-    cursor: pointer;
 }
 .fluid__container{
     background: url(./images/pairet.jpg);
