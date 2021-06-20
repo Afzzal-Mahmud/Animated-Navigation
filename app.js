@@ -7,7 +7,19 @@ const navSlide = () =>{
     burger.addEventListener("click",()=>{
 
         nav.classList.toggle('active');
-        
+
+        navList.forEach((link,index)=>{
+          
+        if(link.style.animation){
+            link.style.animation = '';
+        }
+
+        else{
+            link.style.animation = `liAnimation 0.7s ease forwards ${index/7 +0.2}s`
+        }
+    
+        })
+
 
     });
 }
