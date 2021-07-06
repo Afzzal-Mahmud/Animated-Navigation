@@ -71,7 +71,7 @@ a{
     transition: transform 0.2s ease;
 }
 .fluid__container{
-    background: url(./images/pairet.jpg);
+    background: url(./images/bird.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
